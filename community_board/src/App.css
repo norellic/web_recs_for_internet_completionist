@@ -8,6 +8,14 @@
   background-color: white;
 }
 
+.App {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Center inline content like the h1 */
+  min-height: 100vh; /* Optional: make App take full viewport height */
+  padding: 20px; /* Optional: add some padding */
+}
 
  body {
   margin: 0;
@@ -17,7 +25,8 @@
   min-height: 100vh;
 }
 
-.h1 {
+ h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: brown;
 }
+

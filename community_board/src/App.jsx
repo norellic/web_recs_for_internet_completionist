@@ -6,11 +6,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1> Title: Cool Websites You Should Know</h1>
+      <h1> Cool Websites To Solve Your Lowkey Issues</h1>
       < Grid/>
-
-      < Item_card/>
-      
     </div>
   )
 }

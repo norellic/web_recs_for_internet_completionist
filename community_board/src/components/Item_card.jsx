@@ -1,8 +1,15 @@
 import React from "react";
+import './item_card.css';
 
-const Item_card = () => {
+const Item_card = (props) => {
     return (
-        <div classname="Item_card"> this is a card</div>
+        <td className={'Item_card '+ props.color}>
+            <h2>{props.websiteTitle}</h2>
+            <p>{props.description}</p>
+            <a href={props.link}>
+            <p>Solve</p>
+            </a>
+        </td>
     )
 }
 

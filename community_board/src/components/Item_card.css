@@ -1,0 +1,30 @@
+.Item_card {
+    background-color: rgb(240, 240, 240); /* fallback */
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    text-align: center;
+    vertical-align: top;
+    width: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.Item_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Item_card h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Custom vibrant color classes */
+.pink {
+    background-color: #ff6fa6 !important; /* vibrant rose pink */ 
+    color: white;
+}

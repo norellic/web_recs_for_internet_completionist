@@ -1,20 +1,25 @@
+* {
+    box-sizing: border-box;
+  }
+
 .Item_card {
     background-color: rgb(240, 240, 240); /* fallback */
-    border: 2px solid #e0e0e0;
+    border: 20px solid #0b0000;
     padding: 20px;
-    margin: 10px;
-    border-radius: 12px;
+    border-radius: 40px;
     text-align: center;
-    vertical-align: top;
-    width: 200px;
+    vertical-align: center;
+    width: 100%;
+    max-width: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.Item_card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .Item_card h2 {
@@ -23,8 +28,26 @@
     padding-bottom: 10px;
 }
 
-/* Custom vibrant color classes */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff; /* A nice blue, change as you like */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* !important*/ 
 .pink {
-    background-color: #ff6fa6 !important; /* vibrant rose pink */ 
+    background-color: #381824; /* vibrant rose pink */ 
     color: white;
 }

@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   color: black;
@@ -9,24 +9,51 @@
 }
 
 .App {
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  text-align: center; /* Center inline content like the h1 */
-  min-height: 100vh; /* Optional: make App take full viewport height */
-  padding: 20px; /* Optional: add some padding */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
  body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 700px;
   min-height: 100vh;
 }
 
  h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Courier New', Courier, monospace;
   color: brown;
+  overflow: hidden; /* Hides the content that moves outside the h1 box */
+  white-space: nowrap; /* Keeps the text on a single line */
+  box-sizing: border-box;
+
+  /* Make h1 span full screen width */
+  width: 100vw;
+  position: relative; /* Required for left/transform positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px; /* Add some space below the full-width h1 */
 }
 
+h1 .marquee-content {
+  display: inline-flex;  /* Changed from inline-block for potentially more precise width calculation */
+  /* removed padding-left: 100%; text will now start on screen */
+  vertical-align: top;   /* Helps define the inline-level box consistently */
+  animation: marquee-effect 15s linear infinite; /* Adjust 15s to control speed */
+}
+
+@keyframes marquee-effect {
+  0% {
+    transform: translateX(0); /* Text starts at its natural position (fully visible) */
+  }
+  100% {
+    transform: translateX(-50%); /* Moves the span by half its width. Since the span
+                                     now contains two copies of the text, this scrolls
+                                     exactly one copy of the text off-screen to the left,
+                                     and the second copy seamlessly takes its place. */
+  }
+}

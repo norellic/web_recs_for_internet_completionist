@@ -1,15 +1,14 @@
 import React from "react";
-import './item_card.css';
+import './Item_card.css'; // Changed to import the CSS file with PascalCase 'I'
 
 const Item_card = (props) => {
     return (
-        <td className={'Item_card '+ props.color}>
+        < div className={'Item_card '+ props.color}>
+            <img src={props.imglink} alt={'image of '+ props.websiteTitle}/>
             <h2>{props.websiteTitle}</h2>
             <p>{props.description}</p>
-            <a href={props.link}>
-            <p>Solve</p>
-            </a>
-        </td>
+            <a href={props.link} className="card-button"><p>Solve</p></a>
+        </div>
     )
 }
 

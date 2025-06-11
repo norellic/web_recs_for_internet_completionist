@@ -6,6 +6,7 @@
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   color: black;
   background-color: white;
+  --main-color: brown;
 }
 
 .App {
@@ -22,11 +23,13 @@
   place-items: center;
   min-width: 700px;
   min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
 }
+
 
  h1 {
   font-family:'Courier New', Courier, monospace;
-  color: brown;
+  color: var(--main-color);
   overflow: hidden; /* Hides the content that moves outside the h1 box */
   white-space: nowrap; /* Keeps the text on a single line */
   box-sizing: border-box;
@@ -36,7 +39,7 @@
   position: relative; /* Required for left/transform positioning */
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 20px; /* Add some space below the full-width h1 */
+  margin-bottom: 50px; /* Add some space below the full-width h1 */
 }
 
 h1 .marquee-content {

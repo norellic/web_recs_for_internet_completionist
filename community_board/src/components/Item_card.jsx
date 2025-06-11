@@ -7,7 +7,7 @@ const Item_card = (props) => {
             <img src={props.imglink} alt={'image of '+ props.websiteTitle}/>
             <h2>{props.websiteTitle}</h2>
             <p>{props.description}</p>
-            <a href={props.link} className="card-button"><p>Solve</p></a>
+            <a href={props.link} className="card-button"><p>Unlock</p></a>
         </div>
     )
 }

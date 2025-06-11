@@ -6,8 +6,9 @@ const App = () => {
 
   return (
     <div className="App">
+
       <h1>
-        <span className="marquee-content">Cool Websites To Solve Your Lowkey Issues Cool Websites To Solve Your Lowkey Issues Cool Websites To Solve Your Lowkey Issues</span>
+        <span className="marquee-content">Website Reccomendations for the Internet Completionist Website Reccomendations for the Internet Completionist Website Reccomendations for the Internet Completionist</span>
       </h1>
       < Grid />
     </div>

@@ -4,22 +4,25 @@
   }
 
 .Item_card {
-    background-color: rgb(240, 240, 240); /* fallback */
+    background-color: brown; /* fallback */
     border: 20px solid brown;
     padding: 20px;
+    padding-bottom: 0;
     border-radius: 40px;
     text-align: center; 
-    vertical-align: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 300px;
+    height:600px;
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 img {
     max-width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 30%;
+    object-fit:contain;
     margin-bottom: 10px;
 }
 
@@ -30,9 +33,10 @@ img {
 }
 
 .card-button {
-    display: inline-block;
+    display:inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: auto; 
+    margin-bottom: 20px; 
     background-color: brown;
     color: white;
     text-decoration: none;
@@ -49,14 +53,15 @@ img {
 
 .brown {
     background-color: rgba(165, 42, 42, 0.7);
-    color: white;
+    color: rgb(1, 29, 1);
 }
 
 .yellow {
     background-color: rgb(222, 179, 38, 0.7);
+    color:darkred;
 }
 
 .light-blue {
     background-color: rgba(135, 206, 250, 0.7);
+    color:darkblue;
 }
-

@@ -27,27 +27,19 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
-* [ ] I linked relevant images for each card, from the og website where availible
-* [ ] I vibe-coded a marquee header, I've always wanted to use one
+* [x] I linked relevant images for each card, from the og website where availible
+* [x] I vibe-coded a marquee header, I've always wanted to use one
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+![https://github.com/norellic/community_board/blob/main/Codepath%20WEB%20102%20Project%201%20demo_gif.gif](https://github.com/norellic/community_board/blob/main/Codepath%20WEB%20102%20Project%201%20demo_gif.gif)
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-
+Understanding how to style wwith the nested components-- rules would overwrite other rules and make a mess
+Getting a responsive CSS Grid; it still doesn't work perfectly but I will continue to tinker with it
 
 ## License
 

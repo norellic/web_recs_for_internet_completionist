@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![https://github.com/norellic/community_board/blob/main/Codepath%20WEB%20102%20Project%201%20demo_gif.gif](https://github.com/norellic/community_board/blob/main/Codepath%20WEB%20102%20Project%201%20demo_gif.gif)
+![https://github.com/norellic/library_scanner/blob/main/web%20102%20library%20scanner%20-%20Made%20with%20Clipchamp.gif](https://github.com/norellic/library_scanner/blob/main/web%20102%20library%20scanner%20-%20Made%20with%20Clipchamp.gif)
 
 ## Notes
 
